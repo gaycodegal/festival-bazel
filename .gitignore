@@ -1,0 +1,13 @@
+*.o
+*~
+main
+*.hidden.*
+tiled/*.png
+tiled/*.lua
+bazel*
+third_party/
+!*BUILD
+out/
+docs/
+.#*
+__pycache__/

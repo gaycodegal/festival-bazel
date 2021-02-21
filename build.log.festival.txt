@@ -1,0 +1,375 @@
+Remake modincludes.inc
+	NATIVE_AUDIO
+		ok
+	EDITLINE
+		config/modules/editline.mak
+	SIOD
+		ok
+	WAGON
+		ok
+	SCFG
+		ok
+	WFST
+		ok
+	OLS
+		ok
+	RXP
+		src/modules/rxp/rxp.mak
+	clunits
+		unknown module in src/modules/clunits
+	clustergen
+		unknown module in src/modules/clustergen
+	MultiSyn
+		unknown module in src/modules/MultiSyn
+	hts_engine
+		unknown module in src/modules/hts_engine
+	LINUX16_AUDIO
+		config/modules/linux16_audio.mak
+Making in directory ./src ...
+Making in directory src/arch ...
+Making in directory src/arch/festival ...
+making dependencies -- festival.cc Phone.cc utterance.cc features.cc wave.cc wagon_interp.cc linreg.cc audspio.cc server.cc client.cc web.cc tcl.cc wfst.cc ngram.cc viterbi.cc ModuleDescription.cc 
+g++ -c  -fno-implicit-templates  -fopenmp -DOMP_WAGON=1 -O3 -Wall           -I../../../src/include -I../../../../speech_tools/include      -g -O2 -DINSTANTIATE_TEMPLATES -DFTNAME='Festival Speech Synthesis System' -DFTLIBDIRC='/home/soro/Documents/git/festvox/festival/lib ' -DFTVERSION='2.5.1' -DFTSTATE='current'  -DFTDATE='July 2020' -DFTOSTYPE=\"unknown_Linux\" festival.cc
+g++ -c -fno-implicit-templates -fopenmp -DOMP_WAGON=1 -O3 -Wall -I../../../src/include -I../../../../speech_tools/include -g -O2 Phone.cc
+g++ -c -fno-implicit-templates -fopenmp -DOMP_WAGON=1 -O3 -Wall -I../../../src/include -I../../../../speech_tools/include -g -O2 utterance.cc
+g++ -c -fno-implicit-templates -fopenmp -DOMP_WAGON=1 -O3 -Wall -I../../../src/include -I../../../../speech_tools/include -g -O2 features.cc
+g++ -c -fno-implicit-templates -fopenmp -DOMP_WAGON=1 -O3 -Wall -I../../../src/include -I../../../../speech_tools/include -g -O2 wave.cc
+g++ -c -fno-implicit-templates -fopenmp -DOMP_WAGON=1 -O3 -Wall -I../../../src/include -I../../../../speech_tools/include -g -O2 wagon_interp.cc
+g++ -c -fno-implicit-templates -fopenmp -DOMP_WAGON=1 -O3 -Wall -I../../../src/include -I../../../../speech_tools/include -g -O2 linreg.cc
+g++ -c -fno-implicit-templates -fopenmp -DOMP_WAGON=1 -O3 -Wall -I../../../src/include -I../../../../speech_tools/include -g -O2 audspio.cc
+g++ -c -fno-implicit-templates -fopenmp -DOMP_WAGON=1 -O3 -Wall -I../../../src/include -I../../../../speech_tools/include -g -O2 server.cc
+g++ -c -fno-implicit-templates -fopenmp -DOMP_WAGON=1 -O3 -Wall -I../../../src/include -I../../../../speech_tools/include -g -O2 client.cc
+g++ -c -fno-implicit-templates -fopenmp -DOMP_WAGON=1 -O3 -Wall -I../../../src/include -I../../../../speech_tools/include -g -O2 web.cc
+g++ -c -fno-implicit-templates -fopenmp -DOMP_WAGON=1 -O3 -Wall -I../../../src/include -I../../../../speech_tools/include -g -O2 tcl.cc
+g++ -c -fno-implicit-templates -fopenmp -DOMP_WAGON=1 -O3 -Wall -I../../../src/include -I../../../../speech_tools/include -g -O2 wfst.cc
+g++ -c -fno-implicit-templates -fopenmp -DOMP_WAGON=1 -O3 -Wall -I../../../src/include -I../../../../speech_tools/include -g -O2 ngram.cc
+g++ -c -fno-implicit-templates -fopenmp -DOMP_WAGON=1 -O3 -Wall -I../../../src/include -I../../../../speech_tools/include -g -O2 viterbi.cc
+g++ -c -fno-implicit-templates -fopenmp -DOMP_WAGON=1 -O3 -Wall -I../../../src/include -I../../../../speech_tools/include -g -O2 ModuleDescription.cc
+look at library Festival festival.o Phone.o utterance.o features.o wave.o wagon_interp.o linreg.o audspio.o server.o client.o web.o tcl.o wfst.o ngram.o viterbi.o ModuleDescription.o
+Update library Festival festival.o Phone.o utterance.o features.o wave.o wagon_interp.o linreg.o audspio.o server.o client.o web.o tcl.o wfst.o ngram.o viterbi.o ModuleDescription.o
+a - festival.o
+a - Phone.o
+a - utterance.o
+a - features.o
+a - wave.o
+a - wagon_interp.o
+a - linreg.o
+a - audspio.o
+a - server.o
+a - client.o
+a - web.o
+a - tcl.o
+a - wfst.o
+a - ngram.o
+a - viterbi.o
+a - ModuleDescription.o
+Making in directory src/modules ...
+Making init_modules.cc
+g++ -c -fno-implicit-templates -fopenmp -DOMP_WAGON=1 -O3 -Wall -I./Database -I../../src/include -I../../../speech_tools/include -g -O2 init_modules.cc
+look at library Festival init_modules.o
+Update library Festival init_modules.o
+a - init_modules.o
+Making in directory src/modules/rxp ...
+making dependencies -- ttsxml.cc 
+g++ -c -fno-implicit-templates -fopenmp -DOMP_WAGON=1 -O3 -Wall -DCHAR_SIZE=8 -I../include -I../../../../speech_tools/include/rxp -I../../../src/include -I../../../../speech_tools/include -g -O2 ttsxml.cc
+look at library Festival ttsxml.o
+Update library Festival ttsxml.o
+a - ttsxml.o
+Making in directory src/modules/clunits ...
+making dependencies -- acost.cc clunits.cc cldb.cc cljoin.cc 
+g++ -c -fno-implicit-templates -fopenmp -DOMP_WAGON=1 -O3 -Wall -I../include -I../UniSyn -I../../../src/include -I../../../../speech_tools/include -g -O2 acost.cc
+g++ -c -fno-implicit-templates -fopenmp -DOMP_WAGON=1 -O3 -Wall -I../include -I../UniSyn -I../../../src/include -I../../../../speech_tools/include -g -O2 clunits.cc
+g++ -c -fno-implicit-templates -fopenmp -DOMP_WAGON=1 -O3 -Wall -I../include -I../UniSyn -I../../../src/include -I../../../../speech_tools/include -g -O2 cldb.cc
+g++ -c -fno-implicit-templates -fopenmp -DOMP_WAGON=1 -O3 -Wall -I../include -I../UniSyn -I../../../src/include -I../../../../speech_tools/include -g -O2 cljoin.cc
+look at library Festival acost.o clunits.o cldb.o cljoin.o
+Update library Festival acost.o clunits.o cldb.o cljoin.o
+a - acost.o
+a - clunits.o
+a - cldb.o
+a - cljoin.o
+Making in directory src/modules/clustergen ...
+making dependencies -- clustergen.cc mlsa_resynthesis.cc vc.cc simple_mlpg.cc HTS_vocoder_me.cc 
+g++ -c -fno-implicit-templates -fopenmp -DOMP_WAGON=1 -O3 -Wall -I../include -I ../hts_engine -DFESTIVAL -I../../../src/include -I../../../../speech_tools/include -g -O2 clustergen.cc
+g++ -c -fno-implicit-templates -fopenmp -DOMP_WAGON=1 -O3 -Wall -I../include -I ../hts_engine -DFESTIVAL -I../../../src/include -I../../../../speech_tools/include -g -O2 mlsa_resynthesis.cc
+g++ -c -fno-implicit-templates -fopenmp -DOMP_WAGON=1 -O3 -Wall -I../include -I ../hts_engine -DFESTIVAL -I../../../src/include -I../../../../speech_tools/include -g -O2 vc.cc
+g++ -c -fno-implicit-templates -fopenmp -DOMP_WAGON=1 -O3 -Wall -I../include -I ../hts_engine -DFESTIVAL -I../../../src/include -I../../../../speech_tools/include -g -O2 simple_mlpg.cc
+g++ -c -fno-implicit-templates -fopenmp -DOMP_WAGON=1 -O3 -Wall -I../include -I ../hts_engine -DFESTIVAL -I../../../src/include -I../../../../speech_tools/include -g -O2 HTS_vocoder_me.cc
+look at library Festival clustergen.o mlsa_resynthesis.o vc.o simple_mlpg.o HTS_vocoder_me.o
+Update library Festival clustergen.o mlsa_resynthesis.o vc.o simple_mlpg.o HTS_vocoder_me.o
+a - clustergen.o
+a - mlsa_resynthesis.o
+a - vc.o
+a - simple_mlpg.o
+a - HTS_vocoder_me.o
+Making in directory src/modules/MultiSyn ...
+making dependencies -- UnitSelection.cc VoiceBase.cc DiphoneUnitVoice.cc VoiceModuleBase.cc DiphoneVoiceModule.cc EST_TargetCost.cc TargetCostRescoring.cc EST_JoinCost.cc EST_JoinCostCache.cc DiphoneBackoff.cc EST_DiphoneCoverage.cc EST_FlatTargetCost.cc EST_HybridTargetCost.cc 
+g++ -c -fno-implicit-templates -fopenmp -DOMP_WAGON=1 -O3 -Wall -I../include -I../../../src/include -I../../../../speech_tools/include -g -O2 UnitSelection.cc
+g++ -c -fno-implicit-templates -fopenmp -DOMP_WAGON=1 -O3 -Wall -I../include -I../../../src/include -I../../../../speech_tools/include -g -O2 VoiceBase.cc
+g++ -c -fno-implicit-templates -fopenmp -DOMP_WAGON=1 -O3 -Wall -I../include -I../../../src/include -I../../../../speech_tools/include -g -O2 DiphoneUnitVoice.cc
+g++ -c -fno-implicit-templates -fopenmp -DOMP_WAGON=1 -O3 -Wall -I../include -I../../../src/include -I../../../../speech_tools/include -g -O2 VoiceModuleBase.cc
+g++ -c -fno-implicit-templates -fopenmp -DOMP_WAGON=1 -O3 -Wall -I../include -I../../../src/include -I../../../../speech_tools/include -g -O2 DiphoneVoiceModule.cc
+g++ -c -fno-implicit-templates -fopenmp -DOMP_WAGON=1 -O3 -Wall -I../include -I../../../src/include -I../../../../speech_tools/include -g -O2 EST_TargetCost.cc
+g++ -c -fno-implicit-templates -fopenmp -DOMP_WAGON=1 -O3 -Wall -I../include -I../../../src/include -I../../../../speech_tools/include -g -O2 TargetCostRescoring.cc
+g++ -c -fno-implicit-templates -fopenmp -DOMP_WAGON=1 -O3 -Wall -I../include -I../../../src/include -I../../../../speech_tools/include -g -O2 EST_JoinCost.cc
+g++ -c -fno-implicit-templates -fopenmp -DOMP_WAGON=1 -O3 -Wall -I../include -I../../../src/include -I../../../../speech_tools/include -g -O2 EST_JoinCostCache.cc
+g++ -c -fno-implicit-templates -fopenmp -DOMP_WAGON=1 -O3 -Wall -I../include -I../../../src/include -I../../../../speech_tools/include -g -O2 DiphoneBackoff.cc
+g++ -c -fno-implicit-templates -fopenmp -DOMP_WAGON=1 -O3 -Wall -I../include -I../../../src/include -I../../../../speech_tools/include -g -O2 EST_DiphoneCoverage.cc
+g++ -c -fno-implicit-templates -fopenmp -DOMP_WAGON=1 -O3 -Wall -I../include -I../../../src/include -I../../../../speech_tools/include -g -O2 EST_FlatTargetCost.cc
+g++ -c -fno-implicit-templates -fopenmp -DOMP_WAGON=1 -O3 -Wall -I../include -I../../../src/include -I../../../../speech_tools/include -g -O2 EST_HybridTargetCost.cc
+look at library Festival UnitSelection.o VoiceBase.o DiphoneUnitVoice.o VoiceModuleBase.o DiphoneVoiceModule.o EST_TargetCost.o TargetCostRescoring.o EST_JoinCost.o EST_JoinCostCache.o DiphoneBackoff.o EST_DiphoneCoverage.o EST_FlatTargetCost.o EST_HybridTargetCost.o
+Update library Festival UnitSelection.o VoiceBase.o DiphoneUnitVoice.o VoiceModuleBase.o DiphoneVoiceModule.o EST_TargetCost.o TargetCostRescoring.o EST_JoinCost.o EST_JoinCostCache.o DiphoneBackoff.o EST_DiphoneCoverage.o EST_FlatTargetCost.o EST_HybridTargetCost.o
+a - UnitSelection.o
+a - VoiceBase.o
+a - DiphoneUnitVoice.o
+a - VoiceModuleBase.o
+a - DiphoneVoiceModule.o
+a - EST_TargetCost.o
+a - TargetCostRescoring.o
+a - EST_JoinCost.o
+a - EST_JoinCostCache.o
+a - DiphoneBackoff.o
+a - EST_DiphoneCoverage.o
+a - EST_FlatTargetCost.o
+a - EST_HybridTargetCost.o
+Making in directory src/modules/MultiSyn/inst_tmpl ...
+making dependencies -- hash_s_itemlistp_t.cc hash_itemp_tcdatap_t.cc list_uttp_t.cc list_itemp_t.cc list_voicemodulep_t.cc list_strlist_t.cc vector_jccp_t.cc list_scorepair_t.cc 
+g++ -c -fno-implicit-templates -fopenmp -DOMP_WAGON=1 -O3 -Wall -I../../../../src/modules/MultiSyn -I../../../../src/include -I../../../../../speech_tools/include -g -O2 -DINSTANTIATE_TEMPLATES hash_s_itemlistp_t.cc
+g++ -c -fno-implicit-templates -fopenmp -DOMP_WAGON=1 -O3 -Wall -I../../../../src/modules/MultiSyn -I../../../../src/include -I../../../../../speech_tools/include -g -O2 -DINSTANTIATE_TEMPLATES hash_itemp_tcdatap_t.cc
+g++ -c -fno-implicit-templates -fopenmp -DOMP_WAGON=1 -O3 -Wall -I../../../../src/modules/MultiSyn -I../../../../src/include -I../../../../../speech_tools/include -g -O2 -DINSTANTIATE_TEMPLATES list_uttp_t.cc
+g++ -c -fno-implicit-templates -fopenmp -DOMP_WAGON=1 -O3 -Wall -I../../../../src/modules/MultiSyn -I../../../../src/include -I../../../../../speech_tools/include -g -O2 -DINSTANTIATE_TEMPLATES list_itemp_t.cc
+g++ -c -fno-implicit-templates -fopenmp -DOMP_WAGON=1 -O3 -Wall -I../../../../src/modules/MultiSyn -I../../../../src/include -I../../../../../speech_tools/include -g -O2 -DINSTANTIATE_TEMPLATES list_voicemodulep_t.cc
+g++ -c -fno-implicit-templates -fopenmp -DOMP_WAGON=1 -O3 -Wall -I../../../../src/modules/MultiSyn -I../../../../src/include -I../../../../../speech_tools/include -g -O2 -DINSTANTIATE_TEMPLATES list_strlist_t.cc
+g++ -c -fno-implicit-templates -fopenmp -DOMP_WAGON=1 -O3 -Wall -I../../../../src/modules/MultiSyn -I../../../../src/include -I../../../../../speech_tools/include -g -O2 -DINSTANTIATE_TEMPLATES vector_jccp_t.cc
+g++ -c -fno-implicit-templates -fopenmp -DOMP_WAGON=1 -O3 -Wall -I../../../../src/modules/MultiSyn -I../../../../src/include -I../../../../../speech_tools/include -g -O2 -DINSTANTIATE_TEMPLATES list_scorepair_t.cc
+look at library Festival hash_s_itemlistp_t.o hash_itemp_tcdatap_t.o list_uttp_t.o list_itemp_t.o list_voicemodulep_t.o list_strlist_t.o vector_jccp_t.o list_scorepair_t.o
+Update library Festival hash_s_itemlistp_t.o hash_itemp_tcdatap_t.o list_uttp_t.o list_itemp_t.o list_voicemodulep_t.o list_strlist_t.o vector_jccp_t.o list_scorepair_t.o
+a - hash_s_itemlistp_t.o
+a - hash_itemp_tcdatap_t.o
+a - list_uttp_t.o
+a - list_itemp_t.o
+a - list_voicemodulep_t.o
+a - list_strlist_t.o
+a - vector_jccp_t.o
+a - list_scorepair_t.o
+Making in directory src/modules/hts_engine ...
+making dependencies -- fest2hts_engine.cc HTS_audio.c HTS_engine.c HTS_gstream.c HTS_label.c HTS_misc.c HTS_model.c HTS_pstream.c HTS_sstream.c HTS_vocoder.c 
+g++ -c -fno-implicit-templates -fopenmp -DOMP_WAGON=1 -O3 -Wall -I ../include -D FESTIVAL -I../../../src/include -I../../../../speech_tools/include -g -O2 fest2hts_engine.cc
+gcc -c -O3 -Wall -I ../include -D FESTIVAL -I../../../src/include -I../../../../speech_tools/include -g -O2 HTS_audio.c
+gcc -c -O3 -Wall -I ../include -D FESTIVAL -I../../../src/include -I../../../../speech_tools/include -g -O2 HTS_engine.c
+gcc -c -O3 -Wall -I ../include -D FESTIVAL -I../../../src/include -I../../../../speech_tools/include -g -O2 HTS_gstream.c
+gcc -c -O3 -Wall -I ../include -D FESTIVAL -I../../../src/include -I../../../../speech_tools/include -g -O2 HTS_label.c
+gcc -c -O3 -Wall -I ../include -D FESTIVAL -I../../../src/include -I../../../../speech_tools/include -g -O2 HTS_misc.c
+gcc -c -O3 -Wall -I ../include -D FESTIVAL -I../../../src/include -I../../../../speech_tools/include -g -O2 HTS_model.c
+gcc -c -O3 -Wall -I ../include -D FESTIVAL -I../../../src/include -I../../../../speech_tools/include -g -O2 HTS_pstream.c
+gcc -c -O3 -Wall -I ../include -D FESTIVAL -I../../../src/include -I../../../../speech_tools/include -g -O2 HTS_sstream.c
+gcc -c -O3 -Wall -I ../include -D FESTIVAL -I../../../src/include -I../../../../speech_tools/include -g -O2 HTS_vocoder.c
+look at library Festival fest2hts_engine.o HTS_audio.o HTS_engine.o HTS_gstream.o HTS_label.o HTS_misc.o HTS_model.o HTS_pstream.o HTS_sstream.o HTS_vocoder.o
+Update library Festival fest2hts_engine.o HTS_audio.o HTS_engine.o HTS_gstream.o HTS_label.o HTS_misc.o HTS_model.o HTS_pstream.o HTS_sstream.o HTS_vocoder.o
+a - fest2hts_engine.o
+a - HTS_audio.o
+a - HTS_engine.o
+a - HTS_gstream.o
+a - HTS_label.o
+a - HTS_misc.o
+a - HTS_model.o
+a - HTS_pstream.o
+a - HTS_sstream.o
+a - HTS_vocoder.o
+Making in directory src/modules/Lexicon ...
+making dependencies -- lex_aux.cc lexicon.cc lts.cc lts_rules.cc complex.cc lex_ff.cc 
+g++ -c -fno-implicit-templates -fopenmp -DOMP_WAGON=1 -O3 -Wall -I../include -I../../../src/include -I../../../../speech_tools/include -g -O2 lex_aux.cc
+g++ -c -fno-implicit-templates -fopenmp -DOMP_WAGON=1 -O3 -Wall -I../include -I../../../src/include -I../../../../speech_tools/include -g -O2 lexicon.cc
+g++ -c -fno-implicit-templates -fopenmp -DOMP_WAGON=1 -O3 -Wall -I../include -I../../../src/include -I../../../../speech_tools/include -g -O2 lts.cc
+g++ -c -fno-implicit-templates -fopenmp -DOMP_WAGON=1 -O3 -Wall -I../include -I../../../src/include -I../../../../speech_tools/include -g -O2 lts_rules.cc
+g++ -c -fno-implicit-templates -fopenmp -DOMP_WAGON=1 -O3 -Wall -I../include -I../../../src/include -I../../../../speech_tools/include -g -O2 complex.cc
+g++ -c -fno-implicit-templates -fopenmp -DOMP_WAGON=1 -O3 -Wall -I../include -I../../../src/include -I../../../../speech_tools/include -g -O2 lex_ff.cc
+look at library Festival lex_aux.o lexicon.o lts.o lts_rules.o complex.o lex_ff.o
+Update library Festival lex_aux.o lexicon.o lts.o lts_rules.o complex.o lex_ff.o
+a - lex_aux.o
+a - lexicon.o
+a - lts.o
+a - lts_rules.o
+a - complex.o
+a - lex_ff.o
+Making in directory src/modules/base ...
+making dependencies -- modules.cc module_support.cc parameters.cc ff.cc pos.cc phrasify.cc word.cc postlex.cc phrinfo.cc 
+g++ -c -fno-implicit-templates -fopenmp -DOMP_WAGON=1 -O3 -Wall -I../include -I../../../src/include -I../../../../speech_tools/include -g -O2 modules.cc
+g++ -c -fno-implicit-templates -fopenmp -DOMP_WAGON=1 -O3 -Wall -I../include -I../../../src/include -I../../../../speech_tools/include -g -O2 module_support.cc
+g++ -c -fno-implicit-templates -fopenmp -DOMP_WAGON=1 -O3 -Wall -I../include -I../../../src/include -I../../../../speech_tools/include -g -O2 parameters.cc
+g++ -c -fno-implicit-templates -fopenmp -DOMP_WAGON=1 -O3 -Wall -I../include -I../../../src/include -I../../../../speech_tools/include -g -O2 ff.cc
+g++ -c -fno-implicit-templates -fopenmp -DOMP_WAGON=1 -O3 -Wall -I../include -I../../../src/include -I../../../../speech_tools/include -g -O2 pos.cc
+g++ -c -fno-implicit-templates -fopenmp -DOMP_WAGON=1 -O3 -Wall -I../include -I../../../src/include -I../../../../speech_tools/include -g -O2 phrasify.cc
+g++ -c -fno-implicit-templates -fopenmp -DOMP_WAGON=1 -O3 -Wall -I../include -I../../../src/include -I../../../../speech_tools/include -g -O2 word.cc
+g++ -c -fno-implicit-templates -fopenmp -DOMP_WAGON=1 -O3 -Wall -I../include -I../../../src/include -I../../../../speech_tools/include -g -O2 postlex.cc
+g++ -c -fno-implicit-templates -fopenmp -DOMP_WAGON=1 -O3 -Wall -I../include -I../../../src/include -I../../../../speech_tools/include -g -O2 phrinfo.cc
+look at library Festival modules.o module_support.o parameters.o ff.o pos.o phrasify.o word.o postlex.o phrinfo.o
+Update library Festival modules.o module_support.o parameters.o ff.o pos.o phrasify.o word.o postlex.o phrinfo.o
+a - modules.o
+a - module_support.o
+a - parameters.o
+a - ff.o
+a - pos.o
+a - phrasify.o
+a - word.o
+a - postlex.o
+a - phrinfo.o
+Making in directory src/modules/Duration ...
+making dependencies -- dur_aux.cc duration.cc Klatt.cc 
+g++ -c -fno-implicit-templates -fopenmp -DOMP_WAGON=1 -O3 -Wall -I../include -I../../../src/include -I../../../../speech_tools/include -g -O2 dur_aux.cc
+g++ -c -fno-implicit-templates -fopenmp -DOMP_WAGON=1 -O3 -Wall -I../include -I../../../src/include -I../../../../speech_tools/include -g -O2 duration.cc
+g++ -c -fno-implicit-templates -fopenmp -DOMP_WAGON=1 -O3 -Wall -I../include -I../../../src/include -I../../../../speech_tools/include -g -O2 Klatt.cc
+look at library Festival dur_aux.o duration.o Klatt.o
+Update library Festival dur_aux.o duration.o Klatt.o
+a - dur_aux.o
+a - duration.o
+a - Klatt.o
+Making in directory src/modules/Intonation ...
+making dependencies -- int_aux.cc duffint.cc simple.cc gen_int.cc int_tree.cc 
+g++ -c -fno-implicit-templates -fopenmp -DOMP_WAGON=1 -O3 -Wall -I../include -I../../../src/include -I../../../../speech_tools/include -g -O2 int_aux.cc
+g++ -c -fno-implicit-templates -fopenmp -DOMP_WAGON=1 -O3 -Wall -I../include -I../../../src/include -I../../../../speech_tools/include -g -O2 duffint.cc
+g++ -c -fno-implicit-templates -fopenmp -DOMP_WAGON=1 -O3 -Wall -I../include -I../../../src/include -I../../../../speech_tools/include -g -O2 simple.cc
+g++ -c -fno-implicit-templates -fopenmp -DOMP_WAGON=1 -O3 -Wall -I../include -I../../../src/include -I../../../../speech_tools/include -g -O2 gen_int.cc
+gen_int.cc: In function ‘obj* FT_Int_Targets_General_Utt(LISP)’:
+gen_int.cc:61:19: warning: variable ‘targrel’ set but not used [-Wunused-but-set-variable]
+   61 |     EST_Relation *targrel;
+      |                   ^~~~~~~
+g++ -c -fno-implicit-templates -fopenmp -DOMP_WAGON=1 -O3 -Wall -I../include -I../../../src/include -I../../../../speech_tools/include -g -O2 int_tree.cc
+look at library Festival int_aux.o duffint.o simple.o gen_int.o int_tree.o
+Update library Festival int_aux.o duffint.o simple.o gen_int.o int_tree.o
+a - int_aux.o
+a - duffint.o
+a - simple.o
+a - gen_int.o
+a - int_tree.o
+Making in directory src/modules/Text ...
+making dependencies -- text_aux.cc token.cc text.cc tok_ext.cc token_pos.cc xxml.cc text_modes.cc 
+g++ -c -fno-implicit-templates -fopenmp -DOMP_WAGON=1 -O3 -Wall -I../../../src/include -I../../../../speech_tools/include -g -O2 text_aux.cc
+g++ -c -fno-implicit-templates -fopenmp -DOMP_WAGON=1 -O3 -Wall -I../../../src/include -I../../../../speech_tools/include -g -O2 token.cc
+g++ -c -fno-implicit-templates -fopenmp -DOMP_WAGON=1 -O3 -Wall -I../../../src/include -I../../../../speech_tools/include -g -O2 text.cc
+g++ -c -fno-implicit-templates -fopenmp -DOMP_WAGON=1 -O3 -Wall -I../../../src/include -I../../../../speech_tools/include -g -O2 tok_ext.cc
+g++ -c -fno-implicit-templates -fopenmp -DOMP_WAGON=1 -O3 -Wall -I../../../src/include -I../../../../speech_tools/include -g -O2 token_pos.cc
+g++ -c -fno-implicit-templates -fopenmp -DOMP_WAGON=1 -O3 -Wall -I../../../src/include -I../../../../speech_tools/include -g -O2 xxml.cc
+g++ -c -fno-implicit-templates -fopenmp -DOMP_WAGON=1 -O3 -Wall -I../../../src/include -I../../../../speech_tools/include -g -O2 text_modes.cc
+look at library Festival text_aux.o token.o text.o tok_ext.o token_pos.o xxml.o text_modes.o
+Update library Festival text_aux.o token.o text.o tok_ext.o token_pos.o xxml.o text_modes.o
+a - text_aux.o
+a - token.o
+a - text.o
+a - tok_ext.o
+a - token_pos.o
+a - xxml.o
+a - text_modes.o
+Making in directory src/modules/UniSyn ...
+making dependencies -- UniSyn.cc us_prosody.cc us_unit.cc ps_synthesis.cc us_mapping.cc us_features.cc 
+g++ -c  -fno-implicit-templates  -fopenmp -DOMP_WAGON=1 -O3 -Wall           -I../../../src/include -I../../../../speech_tools/include      -g -O2  UniSyn.cc -o UniSyn.o
+g++ -c -fno-implicit-templates -fopenmp -DOMP_WAGON=1 -O3 -Wall -I../../../src/include -I../../../../speech_tools/include -g -O2 us_prosody.cc
+g++ -c -fno-implicit-templates -fopenmp -DOMP_WAGON=1 -O3 -Wall -I../../../src/include -I../../../../speech_tools/include -g -O2 us_unit.cc
+g++ -c -fno-implicit-templates -fopenmp -DOMP_WAGON=1 -O3 -Wall -I../../../src/include -I../../../../speech_tools/include -g -O2 ps_synthesis.cc
+g++ -c -fno-implicit-templates -fopenmp -DOMP_WAGON=1 -O3 -Wall -I../../../src/include -I../../../../speech_tools/include -g -O2 us_mapping.cc
+g++ -c -fno-implicit-templates -fopenmp -DOMP_WAGON=1 -O3 -Wall -I../../../src/include -I../../../../speech_tools/include -g -O2 us_features.cc
+look at library Festival UniSyn.o us_prosody.o us_unit.o ps_synthesis.o us_mapping.o us_features.o
+Update library Festival UniSyn.o us_prosody.o us_unit.o ps_synthesis.o us_mapping.o us_features.o
+a - UniSyn.o
+a - us_prosody.o
+a - us_unit.o
+a - ps_synthesis.o
+a - us_mapping.o
+a - us_features.o
+Making in directory src/modules/donovan ...
+making dependencies -- makewav.c load_diphs.c coeffs.c excitation.c pitch.c durations.c donovan.cc 
+gcc -c -O3 -Wall -I../include -I../../../src/include -I../../../../speech_tools/include -g -O2 makewav.c
+gcc -c -O3 -Wall -I../include -I../../../src/include -I../../../../speech_tools/include -g -O2 load_diphs.c
+gcc -c -O3 -Wall -I../include -I../../../src/include -I../../../../speech_tools/include -g -O2 coeffs.c
+gcc -c -O3 -Wall -I../include -I../../../src/include -I../../../../speech_tools/include -g -O2 excitation.c
+gcc -c -O3 -Wall -I../include -I../../../src/include -I../../../../speech_tools/include -g -O2 pitch.c
+gcc -c -O3 -Wall -I../include -I../../../src/include -I../../../../speech_tools/include -g -O2 durations.c
+g++ -c -fno-implicit-templates -fopenmp -DOMP_WAGON=1 -O3 -Wall -I../include -I../../../src/include -I../../../../speech_tools/include -g -O2 donovan.cc
+look at library Festival makewav.o load_diphs.o coeffs.o excitation.o pitch.o durations.o donovan.o
+Update library Festival makewav.o load_diphs.o coeffs.o excitation.o pitch.o durations.o donovan.o
+a - makewav.o
+a - load_diphs.o
+a - coeffs.o
+a - excitation.o
+a - pitch.o
+a - durations.o
+a - donovan.o
+Making in directory src/modules/parser ...
+making dependencies -- pparser.cc 
+g++ -c -fno-implicit-templates -fopenmp -DOMP_WAGON=1 -O3 -Wall -I../include -I../../../src/include -I../../../../speech_tools/include -g -O2 pparser.cc
+look at library Festival pparser.o
+Update library Festival pparser.o
+a - pparser.o
+Making in directory src/modules/UniSyn_diphone ...
+making dependencies -- UniSyn_diphone.cc us_diphone_unit.cc us_diphone_index.cc 
+g++ -c -fno-implicit-templates -fopenmp -DOMP_WAGON=1 -O3 -Wall -I../../../src/include -I../../../../speech_tools/include -g -O2 UniSyn_diphone.cc
+g++ -c -fno-implicit-templates -fopenmp -DOMP_WAGON=1 -O3 -Wall -I../../../src/include -I../../../../speech_tools/include -g -O2 us_diphone_unit.cc
+g++ -c -fno-implicit-templates -fopenmp -DOMP_WAGON=1 -O3 -Wall -I../../../src/include -I../../../../speech_tools/include -g -O2 us_diphone_index.cc
+look at library Festival UniSyn_diphone.o us_diphone_unit.o us_diphone_index.o
+Update library Festival UniSyn_diphone.o us_diphone_unit.o us_diphone_index.o
+a - UniSyn_diphone.o
+a - us_diphone_unit.o
+a - us_diphone_index.o
+rm init_modules.o
+Making in directory src/main ...
+making dependencies -- festival_main.cc audsp.cc festival_client.cc 
+g++ -c -fno-implicit-templates -fopenmp -DOMP_WAGON=1 -O3 -Wall -I../../src/include -I../../../speech_tools/include -g -O2 festival_main.cc
+g++ -O3 -Wall     -o festival festival_main.o   -L../../src/lib -lFestival -L../../../speech_tools/lib -lestools -L../../../speech_tools/lib -lestbase -L../../../speech_tools/lib -leststring  -lncurses -lasound    -lm  -fopenmp 
+g++ -c -fno-implicit-templates -fopenmp -DOMP_WAGON=1 -O3 -Wall -I../../src/include -I../../../speech_tools/include -g -O2 festival_client.cc
+g++ -O3 -Wall     -o festival_client festival_client.o   -L../../src/lib -lFestival -L../../../speech_tools/lib -lestools -L../../../speech_tools/lib -lestbase -L../../../speech_tools/lib -leststring  -lncurses -lasound    -lm  -fopenmp 
+g++ -c -fno-implicit-templates -fopenmp -DOMP_WAGON=1 -O3 -Wall -I../../src/include -I../../../speech_tools/include -g -O2 audsp.cc
+g++ -O3 -Wall     -o ../../lib/etc/unknown_Linux/audsp audsp.o   -L../../src/lib -lFestival -L../../../speech_tools/lib -lestools -L../../../speech_tools/lib -lestbase -L../../../speech_tools/lib -leststring  -lncurses -lasound    -lm  -fopenmp 
+Making in directory ./lib ...
+Copy siod.scm from EST/lib/siod
+Copy web.scm from EST/lib/siod
+Copy cstr.scm from EST/lib/siod
+Copy fringe.scm from EST/lib/siod
+Making in directory lib/etc ...
+Making in directory lib/multisyn ...
+Making in directory ./examples ...
+rm -f saytime
+cat saytime.sh >>saytime
+chmod +x saytime
+rm -f text2pos
+cat text2pos.sh >>text2pos
+chmod +x text2pos
+rm -f latest
+cat latest.sh >>latest
+chmod +x latest
+rm -f scfg_parse_text
+cat scfg_parse_text.sh >>scfg_parse_text
+chmod +x scfg_parse_text
+rm -f text2wave
+cat text2wave.sh >>text2wave
+chmod +x text2wave
+rm -f make_utts
+cat make_utts.sh >>make_utts
+chmod +x make_utts
+rm -f dumpfeats
+cat dumpfeats.sh >>dumpfeats
+chmod +x dumpfeats
+rm -f durmeanstd
+cat durmeanstd.sh >>durmeanstd
+chmod +x durmeanstd
+rm -f powmeanstd
+cat powmeanstd.sh >>powmeanstd
+chmod +x powmeanstd
+rm -f run-festival-script
+cat run-festival-script.sh >>run-festival-script
+chmod +x run-festival-script
+rm -f text2utt
+cat text2utt.sh >>text2utt
+chmod +x text2utt
+Making in directory ./bin ...
+
+Remove Links:
+
+Main Links: festival festival_client
+
+Scripts: (sh) (prl) festival_server festival_server_control default_voices
+Making in directory ./doc ...
+../bin/festival -man_options >festival.options
+cat festival.head festival.options festival.tail >festival.1
+../bin/festival_client -man_options >festival_client.options
+cat festival_client.head festival_client.options festival_client.tail >festival_client.1
+cat text2wave.head text2wave.options text2wave.tail >text2wave.1
+rm festival.options festival_client.options

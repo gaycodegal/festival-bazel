@@ -1,0 +1,25 @@
+
+ ###########################################################################
+ #                                                                         #
+ # Makefile for use with Edinburgh Speech Tools Library
+ #                                                                         #
+ ###########################################################################
+
+EST_HOME=/home/soro/Documents/git/festvox/speech_tools
+
+EXECS = 
+
+all: $(EXECS)
+
+## PROGRAMS
+
+## RULES
+
+$(EXECS) : % : %.o $(%_OBJ)
+	g++ -O3 -Wall     -o $* $($*_OBJ) $($*_LIBS)   -L$(EST_HOME)/lib -lestools -L$(EST_HOME)/lib -lestbase -L$(EST_HOME)/lib -leststring   -lncurses -lasound    -lm  -fopenmp 
+
+%.o: %.cc
+	g++ -c  -fno-implicit-templates  -fopenmp -DOMP_WAGON=1 -O3 -Wall           -I$(EST_HOME)/include      -g -O2 $($*_INCLUDES) $($*_DEFINES) $*.cc
+
+%.o: %.c
+	g++ -c  -fno-implicit-templates  -fopenmp -DOMP_WAGON=1 -O3 -Wall           -I$(EST_HOME)/include      -g -O2 $($*_INCLUDES) $($*_DEFINES) $*.c
