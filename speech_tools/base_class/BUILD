@@ -1,5 +1,6 @@
 licenses(["notice"]) # BSD
 load("//bzl:vars.bzl", "COPTS")
+load("//bzl:rules_cc_object.bzl", "cc_object")
 load("//bzl:rules_fest.bzl", "make_libraries")
 
 
@@ -40,7 +41,7 @@ make_libraries(
 
 )
 
-cc_library(
+cc_object(
     name = "base_class",
     srcs = [
         "EST_slist_aux.cc",

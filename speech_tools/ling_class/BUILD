@@ -1,7 +1,9 @@
 licenses(["notice"]) # BSD
+load("//bzl:rules_cc_object.bzl", "cc_object")
 load("//bzl:rules_fest.bzl", "make_libraries", "make_copt_defs")
 load("//bzl:vars.bzl", "COPTS")
-cc_library(
+
+cc_object(
     name = "xml_format_required_deps",
     hdrs = [
         "EST_UtteranceFile.h",
@@ -29,7 +31,7 @@ cc_library(
     visibility = ["//visibility:public"],
 )
 
-cc_library(
+cc_object(
     name = "gen_xml",
     hdrs = [
         "EST_UtteranceFile.h",

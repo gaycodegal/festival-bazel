@@ -4,6 +4,7 @@ exports_files(
 #        "condition-include.bzl",
         "vars.bzl",
         "rule_fest.bzl",
+        "rules_cc_object.bzl",
     ],
     visibility = "//visibility:public",
 )

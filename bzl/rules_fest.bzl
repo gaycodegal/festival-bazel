@@ -1,11 +1,13 @@
 load("//bzl:vars.bzl", "COPTS")
+load("//bzl:rules_cc_object.bzl", "cc_object")
+
 
 os_types = ["_win", "_unix"]
 defines = {
     "IO_DEFINES": ["-DSUPPORT_EDITLINE"],
     "AUDIO_DEFINES": select({
         "//conditions:default": [
-            "-DSUPPORT_ALSALINUX",
+#            "-DSUPPORT_ALSALINUX",
         ],
     }),
 }
@@ -35,7 +37,7 @@ def make_subst(**kwargs):
         for val in lst:
             if val[:2] == "$(" and val[-1] == ")":
                 var = val[2:-1]
-                if var in temp:
+                if var in temp and var != "TSRCS":
                     temp[key].extend(temp[var])
                 elif var in defines:
                     temp[key] = temp[key] + defines[var]
@@ -46,7 +48,7 @@ def make_sublibraries(libname, deps, make_vars):
     if "TSRCS" in make_vars:
         name = libname + "_tsrcs"
         sub_libs.append(name)
-        native.cc_library(
+        cc_object(
             name = name,
             textual_hdrs = make_vars.get("T", []),
             hdrs = make_vars.get("H", []),
@@ -60,7 +62,7 @@ def make_sublibraries(libname, deps, make_vars):
     if "ELSRCS" in make_vars:
         name = libname + "_elsrcs"
         sub_libs.append(":"+name)
-        native.cc_library(
+        cc_object(
             name = name,
             hdrs = make_vars.get("H", []), 
             srcs = make_vars["ELSRCS"],
@@ -73,11 +75,12 @@ def make_sublibraries(libname, deps, make_vars):
     return sub_libs
 
 def make_library(libname, srcs, deps, sub_libraries, make_vars):
-    native.cc_library(
+    cc_object(
         name = libname,
         textual_hdrs = make_vars.get("T", []),
         hdrs = make_vars.get("H", []),
         srcs = srcs,
+        includes = [""],
         deps = sub_libraries + deps,
         copts = make_vars.get("DEFINES", []) + COPTS,
         visibility = ["//visibility:public"],    
