@@ -11,6 +11,6 @@ Festival is compiled first to object files and then we pick and choose amongst t
 
 ## Licensing
 
-Its complicated, you can count any work done by me for this project as falling under the original license (which basically is your standard MIT-ish license), but there are the occasional files that fall under different copyright licenses. I'm trusting the source license that says there's no commercial restrictions.
+Its complicated, you can count any work done by me for this project as falling under the original license (which basically is your standard X11-ish license), but there are the occasional files that fall under different copyright licenses. I'm trusting the source license that says there's no commercial restrictions.
 
 If I'm feeling up to it maybe I'll eventually separate my bazel files from the surrounding festival files so I can just link against the festival source properly, but don't count on it. All i really want to do is get this compiling and onto a phone so I can have a screen reader I can control programmatically cross platform.
