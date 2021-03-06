@@ -7,6 +7,7 @@ make_libraries(
         "//speech_tools/base_class",
     ],
     DIRNAME="grammar/ngram",
+    LOCAL_DEFAULT_LIBRARY = "estools",
     H = "",
     CSRCS = "",
     TSRCS = "lattice_t.cc",

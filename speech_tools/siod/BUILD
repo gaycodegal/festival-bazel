@@ -7,6 +7,7 @@ make_libraries(
         "//speech_tools/base_class",
     ],
     DIRNAME="siod",
+    LOCAL_DEFAULT_LIBRARY = "estools",
     EDITLINEH = "siodeditline.h editline.h el_unix.h",
     OLD_H = "EST_SiodServer.h",
     H = "siodp.h io.h slib_python.h $(EDITLINEH)",

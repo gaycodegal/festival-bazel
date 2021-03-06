@@ -8,6 +8,7 @@ make_libraries(
     ],
 
     DIRNAME="grammar/wfst",
+    LOCAL_DEFAULT_LIBRARY = "estools",
     H = "wfst_aux.h",
     CSRCS = "",
     TSRCS = "EST_WFST.cc wfst_regex.cc wfst_ops.cc wfst_transduce.cc kkcompile.cc",

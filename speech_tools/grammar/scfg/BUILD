@@ -8,6 +8,7 @@ make_libraries(
     ],
 
     DIRNAME="grammar/scfg",
+    LOCAL_DEFAULT_LIBRARY = "estools",
     H = "",
     CSRCS = "",
     TSRCS = "EST_SCFG.cc EST_SCFG_inout.cc",

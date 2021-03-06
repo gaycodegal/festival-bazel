@@ -7,6 +7,7 @@ make_libraries(
         "//speech_tools/base_class",
     ],
     DIRNAME="stats/kalman_filter",
+    LOCAL_DEFAULT_LIBRARY = "estools",
     H = "",
     CSRCS = "",
     TSRCS = "",

@@ -8,6 +8,7 @@ make_libraries(
     ],
 
     DIRNAME="stats/wagon",
+    LOCAL_DEFAULT_LIBRARY = "estools",
     H = "",
     TSRCS= "wagon.cc",
     SRCS = "dlist.cc wagon_aux.cc wagonint.cc $(TSRCS)",

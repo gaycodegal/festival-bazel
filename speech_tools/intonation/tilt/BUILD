@@ -8,6 +8,7 @@ make_libraries(
     ],
 
     DIRNAME="intonation/tilt",
+    LOCAL_DEFAULT_LIBRARY = "estools",
     H = "tilt.h",
     NOOPTSRCS = "tilt_utils.cc",
     CPPSRCS = "tilt_analysis.cc tilt_synthesis.cc $(NOOPTSRCS)",
