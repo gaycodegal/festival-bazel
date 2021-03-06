@@ -6,8 +6,8 @@ Festival is compiled first to object files and then we pick and choose amongst t
 
 ## Who wrote it?
 
-https://github.com/festvox/festival
-https://github.com/festvox/speech_tools
+- https://github.com/festvox/festival
+- https://github.com/festvox/speech_tools
 
 ## Licensing
 
