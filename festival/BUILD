@@ -1,11 +1,11 @@
 licenses(["notice"]) # BSD
 
 FESTIVAL_O = [
-    "//src/arch/festival",
+    "//src/arch/festival", #
     "//src/modules",
-    "//src/modules/rxp",
-    "//src/modules/clunits",
-    "//src/modules/clustergen",
+    "//src/modules/rxp",#
+    "//src/modules/clunits",#
+    "//src/modules/clustergen",#
     "//src/modules/MultiSyn",
     "//src/modules/MultiSyn/inst_tmpl",
     "//src/modules/hts_engine",
