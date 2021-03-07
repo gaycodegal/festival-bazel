@@ -11,6 +11,9 @@ defines = {
 #            "-DSUPPORT_ALSALINUX",
         ],
     }),
+    "FESTIVAL_DEFINES": ["-DSUPPORT_TCL"],
+    #prob dont need
+    "FESTIVAL_INCLUDES": ["-I/usr/local/include"],
 }
 
 def split_make(v):

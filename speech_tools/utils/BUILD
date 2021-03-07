@@ -5,13 +5,13 @@ PROJECT_NAME = "frog"
 PROJECT_DATE = "PROJECT_DATE_SARAH_WROTE_FAKE_DATE"
 PROJECT_STATE = "alpha"
 SYSTEM_TYPE = "linux"
-PROJECT_VERSION = "0.0.0"
+PROJECT_VERSION = "2.5.1"
 
 project_data_copts = make_copt_defs({
     "ESTNAME": PROJECT_NAME,
     "ESTDATE": PROJECT_DATE,
     "ESTVERSION": PROJECT_VERSION,
-    "ESTLIBDRIC": "./lib",
+    "ESTLIBDRIC": "./lib", # TODO make correct
     "ESTSTATE": PROJECT_STATE,
     "ESTOSTYPE": SYSTEM_TYPE,
 })
