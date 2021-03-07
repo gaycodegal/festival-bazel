@@ -22,6 +22,10 @@ def _cc_object_impl(ctx):
     # we need to rely on headers etc defined by dependencies.
     deps_compilation_contexts = [dep[CcInfo].compilation_context for dep in ctx.attr.deps]
 
+    # convert relative quote includes into WORKSPACE relative paths
+    # why cc_common.compile does not do this I do not know.
+    quote_includes = ["{}/{}".format(ctx.label.package, include) for include in ctx.attr.includes]
+    
     # does it respect the toolchains built_in_include_directories?
     # this actually sets up the compilation targets
     (compilation_context, compilation_outputs) = cc_common.compile(
@@ -32,7 +36,7 @@ def _cc_object_impl(ctx):
         srcs = ctx.files.srcs,
         public_hdrs = ctx.files.hdrs,
         private_hdrs = ctx.files.private_hdrs,
-        quote_includes = ctx.attr.includes,
+        quote_includes = quote_includes,
         local_defines = ctx.attr.defines,
         user_compile_flags = ctx.attr.copts,
         compilation_contexts = deps_compilation_contexts,

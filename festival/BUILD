@@ -1,30 +1,30 @@
 licenses(["notice"]) # BSD
 
 FESTIVAL_O = [
-    "//src/arch/festival", #
-    "//src/modules",
-    "//src/modules/rxp",#
-    "//src/modules/clunits",#
-    "//src/modules/clustergen",#
-    "//src/modules/MultiSyn",
-    "//src/modules/MultiSyn/inst_tmpl",
-    "//src/modules/hts_engine",
-    "//src/modules/Lexicon",
-    "//src/modules/base",
-    "//src/modules/Duration",
-    "//src/modules/Intonation",
-    "//src/modules/Text",
-    "//src/modules/UniSyn",
-    "//src/modules/donovan",
-    "//src/modules/parser",
-    "//src/modules/UniSyn_diphone",
-    "//src/main",
+    "//festival/src/arch/festival", #
+    "//festival/src/modules",
+    "//festival/src/modules/rxp",#
+    "//festival/src/modules/clunits",#
+    "//festival/src/modules/clustergen",#
+    "//festival/src/modules/MultiSyn",# 
+    "//festival/src/modules/MultiSyn/inst_tmpl",#
+    "//festival/src/modules/hts_engine",
+    "//festival/src/modules/Lexicon",
+    "//festival/src/modules/base",
+    "//festival/src/modules/Duration",
+    "//festival/src/modules/Intonation",
+    "//festival/src/modules/Text",
+    "//festival/src/modules/UniSyn",
+    "//festival/src/modules/donovan",
+    "//festival/src/modules/parser",
+    "//festival/src/modules/UniSyn_diphone",
+    "//festival/src/main",
 ]
 cc_library(
-    name = "estools",
-    srcs = ESTOOLS_O,
+    name = "Festival",
+    srcs = FESTIVAL_O,
     deps = [
         "//speech_tools/include",
-    ] + ESTOOLS_O,
+    ] + FESTIVAL_O,
     visibility = ["//visibility:public"],
 )
