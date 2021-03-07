@@ -7,6 +7,7 @@ tiled/*.png
 tiled/*.lua
 bazel*
 third_party/
+festival/bin/
 !*BUILD
 out/
 docs/
