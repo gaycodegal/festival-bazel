@@ -4,7 +4,6 @@ load("//bzl:rules_fest.bzl", "make_libraries", "make_copt_defs")
 
 fest_copts = make_copt_defs({
     "FTNAME": "bazel-festival",
-    "FTLIBDIRC": "./", # TODO make correct
     "FTVERSION":"2.5.1",
     "FTSTATE": "current",
     "FTDATE": "July 2020",
@@ -16,7 +15,7 @@ cc_object(
     ],
     hdrs = ["festivalP.h"],
     srcs = ["festival.cc"],
-    copts = fest_copts + ["-DFTOSTYPE=\"linux\""],
+    copts = fest_copts + ["-DFTLIBDIRC=./lib", "-DFTOSTYPE=\"linux\""],
 )
 
 make_libraries(

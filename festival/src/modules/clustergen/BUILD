@@ -8,7 +8,7 @@ make_libraries(
     ],
     DIRNAME="src/modules/clustergen",
     H = "mlsa_resynthesis.h HTS_vocoder_me.h vc.h simple_mlpg.h",
-    CPPSRCS = "clustergen.cc mlsa_resynthesis.cc vc.cc simple_mlpg.cc",
+    CPPSRCS = "clustergen.cc mlsa_resynthesis.cc vc.cc simple_mlpg.cc HTS_vocoder_me.cc",
     DEFINES = "-DFESTIVAL",
     SRCS = "$(CPPSRCS)",
 )

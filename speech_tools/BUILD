@@ -15,6 +15,7 @@ cc_library(
     deps = [
         "//speech_tools/include",
     ] + ESTOOLS_O,
+    linkopts = ["-lncurses"],
     visibility = ["//visibility:public"],
 )
 
@@ -49,23 +50,5 @@ cc_library(
     deps = [
         "//speech_tools/include",
     ] + ESTSTRING_O,
-    visibility = ["//visibility:public"],
-)
-
-cc_library(
-    name = "speech_tools",
-    deps = [
-        "//speech_tools/include",
-        "//speech_tools/siod",
-        "//speech_tools/rxp",
-        "//speech_tools/audio",
-        "//speech_tools/utils",
-        "//speech_tools/ling_class",
-        "//speech_tools/speech_class",
-        "//speech_tools/sigpr",
-        "//speech_tools/stats",
-        "//speech_tools/grammar",
-        "//speech_tools/intonation",
-    ],
     visibility = ["//visibility:public"],
 )

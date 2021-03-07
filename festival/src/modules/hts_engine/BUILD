@@ -18,7 +18,7 @@ make_libraries(
     H = "HTS_engine.h HTS_hidden.h",
 
     CPPSRCS = "fest2hts_engine.cc",
-    CSRCS = "HTS_audio.c HTS_engine.c HTS_gstream.c HTS_label.c HTS_misc.c HTS_model.c HTS_pstream.c HTS_sstream.c HTS_vocoder.c",
+    CSRCS = "HTS_audio.c HTS_engine.c HTS_gstream.c HTS_label.c HTS_misc.c HTS_model.c HTS_pstream.c HTS_sstream.c",
 
     SRCS = "$(CPPSRCS) $(CSRCS)",
 )

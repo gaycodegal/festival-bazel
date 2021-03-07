@@ -11,7 +11,6 @@ project_data_copts = make_copt_defs({
     "ESTNAME": PROJECT_NAME,
     "ESTDATE": PROJECT_DATE,
     "ESTVERSION": PROJECT_VERSION,
-    "ESTLIBDRIC": "./lib", # TODO make correct
     "ESTSTATE": PROJECT_STATE,
     "ESTOSTYPE": SYSTEM_TYPE,
 })
@@ -22,7 +21,7 @@ cc_library(
     deps = [
         "//speech_tools/include",
     ],
-    copts = project_data_copts,
+    copts = project_data_copts + ["-DESTLIBDRIC=./lib"],
     visibility = ["//visibility:public"],
 )
 
