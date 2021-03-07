@@ -15,7 +15,7 @@ cc_object(
     ],
     hdrs = ["festivalP.h"],
     srcs = ["festival.cc"],
-    copts = fest_copts + ["-DFTLIBDIRC=./lib", "-DFTOSTYPE=\"linux\""],
+    copts = fest_copts + ["-DFTLIBDIRC=./festival/lib", "-DFTOSTYPE=\"linux\""],
 )
 
 make_libraries(

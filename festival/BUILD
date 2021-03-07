@@ -13,3 +13,9 @@ cc_library(
     ] + FESTIVAL_O,
     visibility = ["//visibility:public"],
 )
+
+filegroup(
+    name = "lib",
+    srcs = glob(["lib/**"]),
+    visibility = ["//visibility:public"],
+)
