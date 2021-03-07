@@ -7,16 +7,18 @@ cc_library(
     includes = [""],
     visibility = ["//visibility:public"],
 )
-"""
+
 make_libraries(
     deps = [
         "//festival/src/include",
-        "//festival/src/modules/UniSyn:include",
     ],
-    DIRNAME="src/modules/clunits",
-    SCMS = "acost.scm", # TODO figure out how to make this work for bazel
-    H = "clunits.h",
-    SRCSCXX = "acost.cc clunits.cc cldb.cc cljoin.cc",
-    SRCS = "$(SRCSCXX) $(TSRCS)",
+    DIRNAME="src/modules/UniSyn",
+
+    H = "UniSyn.h us_features.h us_synthesis.h",
+
+    CPPSRCS = "UniSyn.cc us_prosody.cc us_unit.cc ps_synthesis.cc \
+    us_mapping.cc us_features.cc",
+    SRCS = "$(CPPSRCS)",
+
 )
-"""
+

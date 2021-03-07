@@ -7,16 +7,19 @@ cc_library(
     includes = [""],
     visibility = ["//visibility:public"],
 )
-"""
+
 make_libraries(
     deps = [
         "//festival/src/include",
-        "//festival/src/modules/UniSyn:include",
-    ],
-    DIRNAME="src/modules/clunits",
-    SCMS = "acost.scm", # TODO figure out how to make this work for bazel
-    H = "clunits.h",
-    SRCSCXX = "acost.cc clunits.cc cldb.cc cljoin.cc",
-    SRCS = "$(SRCSCXX) $(TSRCS)",
+     ],
+    DIRNAME="src/modules/hts_engine",
+    DEFINES="-DFESTIVAL",
+
+    H = "HTS_engine.h HTS_hidden.h",
+
+    CPPSRCS = "fest2hts_engine.cc",
+    CSRCS = "HTS_audio.c HTS_engine.c HTS_gstream.c HTS_label.c HTS_misc.c HTS_model.c HTS_pstream.c HTS_sstream.c HTS_vocoder.c",
+
+    SRCS = "$(CPPSRCS) $(CSRCS)",
 )
-"""
+
