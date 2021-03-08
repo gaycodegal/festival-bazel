@@ -37,6 +37,9 @@ cc_library(
     deps = [
         "//speech_tools/include",
     ] + ESTBASE_O,
+    linkopts = [
+        "-lasound",
+    ],
     visibility = ["//visibility:public"],
 )
 

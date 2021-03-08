@@ -183,7 +183,7 @@ Stop saving waveforms when doing tts."
   Convert FILE to speech.  MODE identifies any special treatment
   necessary for FILE.  This is simply a front end to tts_file but 
   puts the system in async audio mode first. [see TTS]"
-  (audio_mode 'async)
+  (audio_mode 'sync) ;; TODO re-enable async when fixed
   (if mode
       (tts_file file mode)
       (tts_file file (tts_find_text_mode file auto-text-mode-alist)))

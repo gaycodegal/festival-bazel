@@ -8,7 +8,7 @@ defines = {
     "IO_DEFINES": ["-DSUPPORT_EDITLINE"],
     "AUDIO_DEFINES": select({
         "//conditions:default": [
-#            "-DSUPPORT_ALSALINUX",
+            "-DSUPPORT_ALSALINUX",
         ],
     }),
     "FESTIVAL_DEFINES": ["-DSUPPORT_TCL"],
@@ -161,7 +161,7 @@ def make_copt_defs(args):
     temp = []
     for key in args:
         val = args[key]
-        temp.append("-D{key}='{val}'".format(key=key, val=val))
+        temp.append("-D{key}={val}".format(key=key, val=val))
     return temp
     
     

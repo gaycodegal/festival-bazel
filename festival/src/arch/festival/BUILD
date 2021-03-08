@@ -7,6 +7,7 @@ fest_copts = make_copt_defs({
     "FTVERSION":"2.5.1",
     "FTSTATE": "current",
     "FTDATE": "July 2020",
+    "FTLIBDIRC": "./festival/lib",
 })
 cc_object(
     name = "festival-o",
@@ -15,7 +16,9 @@ cc_object(
     ],
     hdrs = ["festivalP.h"],
     srcs = ["festival.cc"],
-    copts = fest_copts + ["-DFTLIBDIRC=./festival/lib", "-DFTOSTYPE=\"linux\""],
+    copts = fest_copts + [
+        "-DFTOSTYPE=\"linux\"",
+    ],
 )
 
 make_libraries(
