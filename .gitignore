@@ -1,7 +1,6 @@
 *.a
 *.o
 *~
-main
 *.hidden.*
 tiled/*.png
 tiled/*.lua
@@ -11,5 +10,5 @@ festival/bin/
 !*BUILD
 out/
 docs/
-.#*
+.\#*
 __pycache__/
